@@ -1,12 +1,22 @@
 #root {
-  max-width: 1280px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
+  background-color: rgb(203, 241, 243);
+  border-radius: 40px;
+}
+
+body {
+  background: linear-gradient(to bottom, #1732ca 0%, #78cbdc 100%);
+
+  height: 100vh;
 }
 
 .App {
   padding: 50px;
+
+  border-radius: 20px;
 }
 
 ul {
@@ -25,10 +35,6 @@ li {
   font-weight: bold;
   transition: 75ms ease-in;
 }
-li:hover {
-  border: 2px solid;
-  background-color: rgb(89, 249, 249);
-}
 
 .selected {
   background-color: rgb(89, 249, 249);
@@ -40,7 +46,7 @@ button {
   margin: 7px;
   border: none;
   background-color: cornflowerblue;
-  color: white;
+  color: rgb(5, 0, 0);
   border-radius: 5px;
   cursor: pointer;
   transition: 75ms ease-in;
@@ -52,4 +58,14 @@ button:active {
 
 li:active {
   transform: scale(0.97);
+}
+
+.correct {
+  background-color: chartreuse;
+  border: 2px solid chartreuse;
+}
+
+.wrong {
+  background-color: crimson;
+  border: 2px solid crimson;
 }
